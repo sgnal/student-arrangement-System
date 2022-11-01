@@ -21,11 +21,10 @@ public class StuManage extends JFrame implements ActionListener{
     StuModel sm;
 
 
-
-
     public static void main(String[] args) {
 
         StuManage sm = new StuManage();
+        System.out.println("你好");
 
     }
     public StuManage(){
