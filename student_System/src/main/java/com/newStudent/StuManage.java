@@ -25,6 +25,8 @@ public class StuManage extends JFrame implements ActionListener{
 
         StuManage sm = new StuManage();
         System.out.println("你好");
+        System.out.println("你好");
+        System.out.println("你好");
 
     }
     public StuManage(){
