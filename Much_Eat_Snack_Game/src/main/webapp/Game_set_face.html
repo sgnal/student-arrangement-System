@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网页版贪吃蛇</title>
+    <link type="text/css" href="./snake.css" rel="stylesheet"/>
+
+</head>
+<body>
+<script type="text/javascript" src="lib/jquery-3.6.0.js"></script>
+<script type="text/javascript" src="snake.js"></script>
+
+<h1>贪吃蛇</h1>
+<div id="init-content">
+    <h2>游戏设置</h2>
+    <div class="input-content">
+        <label>障碍个数</label>
+        <input id="obstacle-num" placeholder="请输入1-10的数字" type="number" max="10"/>
+
+    </div>
+    <div>
+        <label>移动速度</label>
+        <input type="radio" name="speed" class="speed" value="150"/><label>块</label>
+        <input type="radio" name="speed" class="speed" value="300" checked/><label>中</label>
+        <input type="radio" name="speed" class="speed" value="500"/><label>慢</label>
+
+    </div>
+    <input id="start-game-btn" type="button" value="开始游戏">
+</div>
+<div id="score-container">
+    <span>当前分数：</span>
+    <span id="score">0</span>
+</div>
+
+<div id="introduce-container">
+    <div>
+        <span>(<-->)</span>
+        <span>方向键移动</span>
+
+    </div>
+    <div>
+        <span class="introduce-snake-head"></span>
+        <span>小蛇</span>
+    </div>
+    <div>
+        <span class="introduce-food"></span>
+        <span>食物</span>
+    </div>
+    <div>
+        <span class="introduce-obstacle"></span>
+        <span>障碍物</span>
+    </div>
+
+</div>
+
+<!--游戏容器-->
+<div id="container">
+
+</div>
+<!--游戏退出和重玩-->
+<div id="game-over-container">
+    <p class="game-over-text">游戏结束</p>
+    <p>
+        <span>本次得分</span>
+        <span id="total-score">0</span>
+
+    </p>
+    <button id="restart-btn">重新开始</button>
+    <button id="exit-btn">退出游戏</button>
+</div>
+
+
+</body>
+</html>

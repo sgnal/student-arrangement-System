@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>网页版2048游戏</title>
+
+</head>
+<body>
+<div id="game">
+    分数：<span id="game_score">0</span>
+    <div id="game_container">
+        <div class="game-cell" style="width:100px;height: 100px;top: 20px;left: 20px"></div>
+    </div>
+</div>
+<script src="lib/jquery-3.6.0.js"></script>
+
+<!--这是一个js函数-->
+<script src="Game2048.js"></script>
+<script>
+    Game2048({prefix:'game',len:4,size:100,margin:20})
+</script>
+
+</body>
+</html>
